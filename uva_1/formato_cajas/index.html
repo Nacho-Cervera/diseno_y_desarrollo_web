@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gimnasio FitLife - Registro</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+    <header>
+        <h1>Gimnasio FitLife</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#planes">Planes</a></li>
+                <li><a href="#registro">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h2>Bienvenido a FitLife</h2>
+            <p>Tu lugar para alcanzar tus metas de salud y bienestar.</p>
+            <img src="https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg" alt="Gimnasio moderno"
+                width="300">
+        </section>
+
+        <section id="planes">
+            <h2>Nuestros Planes</h2>
+            <ul>
+                <li>Plan Básico</li>
+                <li>Plan Intermedio</li>
+                <li>Plan Premium</li>
+            </ul>
+        </section>
+
+        <section id="registro">
+            <h2>Formulario de Registro</h2>
+            <form action="#" method="post">
+                <label for="nombre">Nombre completo:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="email">Correo electrónico:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="plan">Elegí tu plan:</label><br>
+                <select id="plan" name="plan">
+                    <option value="basico">Básico</option>
+                    <option value="intermedio">Intermedio</option>
+                    <option value="premium">Premium</option>
+                </select><br><br>
+
+                <label for="horario">Horario preferido:</label><br>
+                <input type="time" id="horario" name="horario"><br><br>
+
+                <input type="submit" value="Registrarme">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Gimnasio FitLife. Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

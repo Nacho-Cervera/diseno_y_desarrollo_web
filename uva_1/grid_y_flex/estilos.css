@@ -1,0 +1,27 @@
+body {
+    font-family: sans-serif;
+    padding: 2rem;
+}
+
+h1 {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: #333;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    max-width: 600px;
+    margin: auto;
+}
+
+.galeria img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
