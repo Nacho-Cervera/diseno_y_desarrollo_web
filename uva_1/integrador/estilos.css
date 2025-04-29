@@ -2,6 +2,8 @@ body {
     background-color: #f5f9ff;
     margin: 0;
     font-family: sans-serif;
+    overflow-x: hidden;
+
 }
 
 nav {
@@ -31,6 +33,17 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #ff4d4d;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
 }
 
 h1 {
@@ -309,16 +322,19 @@ a:hover {
 
 .footer {
     background-color: #003366;
-    /* Azul oscuro */
     color: #ffffff;
-    /* Texto blanco */
     text-align: center;
     padding: 1rem;
     font-size: 0.9rem;
     margin-top: 4rem;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .footer p {
     margin: 0;
-    /* Sacar márgenes raros */
+}
+
+* {
+    outline: 1px solid red;
 }
