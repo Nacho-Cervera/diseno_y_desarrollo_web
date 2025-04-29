@@ -114,6 +114,18 @@ table td {
     color: #003366;
 }
 
+.tabla-scroll {
+    overflow-x: auto;
+    max-width: 100%;
+}
+
+.tabla-scroll table {
+    min-width: 600px;
+    /* o más si tu tabla lo necesita */
+    border-collapse: collapse;
+}
+
+
 .card-info {
     background-color: #ffc4c4;
     padding: 2rem;
