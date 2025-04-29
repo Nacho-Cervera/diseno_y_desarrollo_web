@@ -4,14 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
     <title>Sobre mí</title>
 </head>
 
 <body>
     <header>
-        <div style="float: right; width: 65%">
-            <img src="img/IMG-20240116-WA0060.jpg" alt="Yo" width="300" height="700">
-        </div>
+
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -22,50 +21,93 @@
             </ul>
         </nav>
     </header>
-    <h1><strong>Sobre mí</strong></h1>
-    <h2><u>Información Personal</u></h2>
-    <ul>
-        <li><b>Nombre: </b>Ignacio</li>
-        <li><b>Apellido: </b>Cervera</li>
-        <li><b>Fecha de Nacimiento: </b>04/03/2003</li>
-        <li><b>Lugar de Nacimiento: </b>Buenos Aires, Argentina</li>
-    </ul>
-    <h2><u>Introducción</u></h2>
-    <p>
-        Mi nombre es Ignacio Cervera y soy de Buenos Aires, Argentina. Me apasiona<br>
-        el fútbol y la música, y toco la batería en una banda. La tecnología siempre <br>
-        ha sido una de mis principales inquietudes, por lo que decidí estudiar Sistemas. <br>
-        Busco combinar mi amor por la tecnología con mis otras pasiones, para<br>
-        aprender y crecer en un campo que me permite explorar constantemente nuevas ideas<br>
-        y soluciones.
-    </p>
-    <h2><u>Algunas cosas sobre mi</u></h2>
-    <div style="display: flex; justify-content: space-around;">
-        <div>
-            <h4><i>Hobbies</i></h4>
-            <ol>
-                <li>Tocar la batería</li>
-                <li>Jugar al fútbol</li>
-                <li>Leer</li>
-            </ol>
-        </div>
-        <div>
-            <h4><i>Comidas</i></h4>
-            <ol>
-                <li>Milanesas</li>
-                <li>Asado</li>
-                <li>Pastas</li>
-            </ol>
-        </div>
-        <div>
-            <h4><i>Bandas</i></h4>
-            <ol>
-                <li>Red Hot Chili Peppers</li>
-                <li>Metallica</li>
-                <li>Almafuerte</li>
-            </ol>
-        </div>
+
+    <div class="contenedor">
+        <h1>Sobre mí</h1>
+        <section class="sobre-mi">
+            <div class="contenido">
+                <div class="sobre-mi-texto">
+
+                    <section class="card-info">
+                        <h2>Información Personal</h2>
+                        <div class="card">
+                            <div class="info-item">
+                                <span class="label">Nombre:</span> Ignacio
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Apellido:</span> Cervera
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Fecha de Nacimiento:</span> 04/03/2003
+                            </div>
+                            <div class="info-item">
+                                <span class="label">Lugar de Nacimiento:</span> Buenos Aires, Argentina
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="intro">
+                        <h2>Introducción</h2>
+                        <p>
+                            Mi nombre es Ignacio Cervera y soy de Buenos Aires, Argentina. Me apasiona el fútbol y la
+                            música, y
+                            toco
+                            la batería en una banda. La tecnología siempre ha sido una de mis principales inquietudes,
+                            por
+                            lo
+                            que
+                            decidí estudiar Sistemas. Busco combinar mi amor por la tecnología con mis otras pasiones,
+                            para
+                            aprender
+                            y crecer en un campo que me permite explorar constantemente nuevas ideas y soluciones.
+                        </p>
+                    </section>
+
+                </div>
+                <div class="sobre-mi-foto">
+                    <img src="img/IMG-20240116-WA0060.jpg" alt="Foto de Ignacio Cervera">
+                </div>
+            </div>
+        </section>
+        <section class="tabla-materias">
+            <h2>Algunas cosas sobre mi</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Hobbies</th>
+                        <th>Comidas</th>
+                        <th>Bandas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Tocar la batería</td>
+                        <td>Milanesas</td>
+                        <td>Red Hot Chili Peppers</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jugar al fútbol</td>
+                        <td>Asado</td>
+                        <td>Metallica</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Leer</td>
+                        <td>Pastas</td>
+                        <td>Almafuerte</td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </section>
     </div>
+    <footer class="footer">
+        <p>&copy; 2025 Ignacio Cervera. Todos los derechos reservados.</p>
+    </footer>
+
 </body>
 
 </html>

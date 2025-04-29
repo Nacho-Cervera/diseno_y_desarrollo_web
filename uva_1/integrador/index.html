@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
     <title>Home</title>
 </head>
 
@@ -18,25 +19,60 @@
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
-        <h1>Home</h1>
     </header>
-    <h2><u>Cursada Actual</u></h2>
-    <ol>
-        <li><b>Testing de Aplicaciones ---------------------------------------------- </b>Lunes ------- 18.30 - 20.30 --
-            Virtual
-        </li>
-        <li><b>Diseño y Desarrollo Web -------------------------------------------- </b>Martes ------ 18.30 - 20.30 --
-            Virtual
-        </li>
-        <li><b>Marketing -------------------------------------------------------------- </b>Miércoles -- 18.30 - 20.30
-            -- Virtual
-        </li>
-        <li><b>Arquitectura del Computador ------------------------------------- </b>Jueves ------ 18.30 - 22.00 --
-            Presencial
-        </li>
-        <li><b>Gestión de Personas en Organizaciones de Tecnología ------- </b>Viernes ----- 18.30 - 20.30 -- Virtual
-        </li>
-    </ol>
+    <div class="contenedor">
+        <h1>Home</h1>
+        <section class="tabla-materias">
+            <h2>Cursada Actual</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Materia</th>
+                        <th>Día</th>
+                        <th>Horario</th>
+                        <th>Modalidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Testing de Aplicaciones</td>
+                        <td>Lunes</td>
+                        <td>18:30 - 20:30</td>
+                        <td>Virtual</td>
+                    </tr>
+                    <tr>
+                        <td>Diseño y Desarrollo Web</td>
+                        <td>Martes</td>
+                        <td>18:30 - 20:30</td>
+                        <td>Virtual</td>
+                    </tr>
+                    <tr>
+                        <td>Marketing</td>
+                        <td>Miércoles</td>
+                        <td>18:30 - 20:30</td>
+                        <td>Virtual</td>
+                    </tr>
+                    <tr>
+                        <td>Arquitectura del Computador</td>
+                        <td>Jueves</td>
+                        <td>18:30 - 22:00</td>
+                        <td>Presencial</td>
+                    </tr>
+                    <tr>
+                        <td>Gestión de Personas en Organizaciones de Tecnología</td>
+                        <td>Viernes</td>
+                        <td>18:30 - 20:30</td>
+                        <td>Virtual</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </div>
+    <footer class="footer">
+        <p>&copy; 2025 Ignacio Cervera. Todos los derechos reservados.</p>
+    </footer>
+
 </body>
 
 </html>
