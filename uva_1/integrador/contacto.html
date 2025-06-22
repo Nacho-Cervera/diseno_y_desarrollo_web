@@ -19,8 +19,8 @@
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
             <div class="botones-modo">
-                <button id="modo-claro" class="boton-modo">Modo Claro</button>
-                <button id="modo-oscuro" class="boton-modo">Modo Oscuro</button>
+                <button id="modo-claro" class="boton-modo" title="Modo Claro">☀️</button>
+                <button id="modo-oscuro" class="boton-modo" title="Modo Oscuro">🌙</button>
             </div>
         </nav>
     </header>
@@ -38,10 +38,8 @@
                 <label for="mensaje">Mensaje:</label>
                 <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
 
-                <!-- Mostrar errores -->
                 <div id="errores" class="error"></div>
 
-                <!-- Mostrar mensaje de éxito -->
                 <div id="mensaje-exito" class="success"></div>
 
                 <button type="submit" class="boton">Enviar</button>
@@ -99,116 +97,3 @@
 </body>
 
 </html>
-
-<!--
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contacto</title>
-    <style>
-        input,
-        textarea {
-            border: 2px solid #ccc;
-            border-radius: 5px;
-            padding: 8px;
-            margin-bottom: 10px;
-            width: 100%;
-            font-size: 16px;
-        }
-
-        input:focus,
-        textarea:focus {
-            border-color: #0077cc;
-            outline: none;
-        }
-
-        .error {
-            color: red;
-            font-size: 14px;
-            margin-bottom: 10px;
-        }
-
-        .success {
-            color: green;
-            font-size: 16px;
-            margin-top: 10px;
-        }
-    </style>
-</head>
-
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="avisos.html">Avisos</a></li>
-                <li><a href="sobre_mi.html">Sobre mí</a></li>
-                <li><a href="materias.html">Materias 2025</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <div class="contenedor">
-        <h1>Contacto</h1>
-        <section class="contacto">
-            <h2>¡Dejá tu mensaje!</h2>
-            <form id="formulario-contacto">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-
-                <div id="errores" class="error"></div>
-
-                <div id="mensaje-exito" class="success"></div>
-
-                <button type="submit" class="boton">Enviar</button>
-            </form>
-
-        </section>
-    </div>
-
-    <footer class="footer">
-        <p>&copy; 2025 Ignacio Cervera. Todos los derechos reservados.</p>
-    </footer>
-
-    <script>
-        document.getElementById('formulario-contacto').addEventListener('submit', function (e) {
-            e.preventDefault(); // Evita que se envíe el formulario por defecto
-
-            const nombre = document.getElementById('nombre').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const mensaje = document.getElementById('mensaje').value.trim();
-            const erroresDiv = document.getElementById('errores');
-            const exitoDiv = document.getElementById('mensaje-exito');
-
-            erroresDiv.textContent = "";
-            exitoDiv.textContent = "";
-
-            // Validaciones básicas
-            if (nombre === "" || email === "" || mensaje === "") {
-                erroresDiv.textContent = "Por favor, completá todos los campos.";
-                return;
-            }
-
-            if (!email.includes("@") || !email.includes(".")) {
-                erroresDiv.textContent = "Ingresá un correo electrónico válido.";
-                return;
-            }
-
-            // Si todo está bien
-            exitoDiv.textContent = `Gracias por tu contacto, ${nombre}. En breve te estaré respondiendo.`;
-        });
-    </script>
-</body>
-
-</html>
--->
