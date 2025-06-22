@@ -18,7 +18,12 @@
                 <li><a href="materias.html">Materias 2025</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
+            <div class="botones-modo">
+                <button id="modo-claro" class="boton-modo">Modo Claro</button>
+                <button id="modo-oscuro" class="boton-modo">Modo Oscuro</button>
+            </div>
         </nav>
+
     </header>
     <div class="contenedor">
         <h1>Home</h1>
@@ -74,6 +79,26 @@
     <footer class="footer">
         <p>&copy; 2025 Ignacio Cervera. Todos los derechos reservados.</p>
     </footer>
+
+    <script>
+        const body = document.body;
+
+        const modoGuardado = localStorage.getItem('modo');
+        if (modoGuardado === 'oscuro') {
+            body.classList.add('oscuro');
+        }
+
+        document.getElementById('modo-claro').addEventListener('click', function () {
+            body.classList.remove('oscuro');
+            localStorage.setItem('modo', 'claro');
+        });
+
+        document.getElementById('modo-oscuro').addEventListener('click', function () {
+            body.classList.add('oscuro');
+            localStorage.setItem('modo', 'oscuro');
+        });
+    </script>
+
 </body>
 
 </html>

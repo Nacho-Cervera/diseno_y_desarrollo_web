@@ -3,12 +3,22 @@ body {
     margin: 0;
     font-family: sans-serif;
     overflow-x: hidden;
-
 }
+
+.oscuro {
+    background-color: #3f3d3d;
+    color: #f1f1f1;
+}
+
 
 nav {
     background-color: #003366;
     padding: 1rem;
+    position: relative;
+}
+
+.oscuro nav {
+    background-color: #000000;
 }
 
 nav ul {
@@ -58,6 +68,12 @@ h1 {
     color: #003366;
 }
 
+.oscuro h1 {
+    background-color: #b1adad;
+    color: #000000;
+    border-left: 5px solid #cc0000;
+}
+
 h2 {
     background-color: #ffe6e6;
     border-left: 5px solid #003366;
@@ -70,6 +86,38 @@ h2 {
     color: #003366;
 }
 
+.oscuro h2 {
+    background-color: #e0dddd;
+    color: #000000;
+    border-left: 5px solid #cc0000;
+}
+
+.botones-modo {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.boton-modo {
+    background-color: #cc0000;
+    color: white;
+    padding: 0.25rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+.boton-modo:hover {
+    background-color: #990000;
+}
+
 .contenedor {
     padding: 2rem;
 }
@@ -79,6 +127,10 @@ h2 {
     padding: 2rem;
     border-radius: 8px;
     margin-bottom: 2rem;
+}
+
+.oscuro .tabla {
+    background-color: #353131;
 }
 
 table {
@@ -95,10 +147,26 @@ table td {
     background-color: #ffe6e6;
 }
 
+.oscuro table td {
+    border: 1px solid #ffffff;
+    background-color: #9c9b9b;
+    color: #000000;
+}
+
+.oscuro table th {
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    color: #ffffff;
+}
+
 table th {
     background-color: #003366;
     color: white;
     font-weight: bold;
+}
+
+.oscuro table th {
+    background-color: #000000;
 }
 
 table tbody tr:nth-child(even) {
@@ -107,6 +175,10 @@ table tbody tr:nth-child(even) {
 
 table tbody td:hover {
     background-color: #dbabab;
+}
+
+.oscuro table tbody td:hover {
+    background-color: #f1e6e6;
 }
 
 table td {
@@ -124,7 +196,6 @@ table td {
     border-collapse: collapse;
 }
 
-
 .card-info {
     background-color: #ffc4c4;
     padding: 2rem;
@@ -133,12 +204,20 @@ table td {
     max-width: 600px;
 }
 
+.oscuro .card-info {
+    background-color: #353131;
+}
+
 .card {
     background-color: #e6f0ff;
     padding: 1.5rem;
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 400px;
+}
+
+.oscuro .card {
+    background-color: #797979;
 }
 
 .info-item {
@@ -162,12 +241,30 @@ table td {
     display: inline-block;
 }
 
+.oscuro .label {
+    color: white;
+}
+
+.oscuro .info-item {
+    color: white;
+    border-bottom: 1px solid #ffffff;
+
+}
+
 .intro {
     background-color: #e6f0ff;
     padding: 2rem;
     border-radius: 8px;
     margin-bottom: 2rem;
     max-width: 600px;
+}
+
+.oscuro .intro {
+    background-color: #797979;
+}
+
+.oscuro .intro p {
+    color: white;
 }
 
 .intro p {
@@ -216,6 +313,10 @@ table td {
     margin-bottom: 2rem;
 }
 
+.oscuro .contacto {
+    background-color: #353131;
+    color: #ffffff;
+}
 
 .contacto form {
     display: flex;
@@ -228,6 +329,10 @@ table td {
     color: #003366;
 }
 
+.oscuro .contacto label {
+    color: white;
+}
+
 .contacto input,
 .contacto textarea {
     padding: 0.75rem;
@@ -238,6 +343,17 @@ table td {
     font-size: 1rem;
     width: 100%;
     box-sizing: border-box;
+}
+
+.error {
+    color: red;
+    font-size: 0.9rem;
+}
+
+.success {
+    color: green;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 .boton {
@@ -286,6 +402,11 @@ table td {
     max-width: 1200px;
 }
 
+.oscuro .materia-container {
+    background-color: #353131;
+    color: #000000
+}
+
 .materia-left {
     flex: 1 1 300px;
     display: flex;
@@ -305,6 +426,12 @@ table td {
     background-color: #e6f0ff;
     padding: 1rem;
     border-radius: 8px;
+}
+
+.oscuro .materia-right,
+.oscuro .fechas,
+.oscuro .bibliografia {
+    background-color: #797979;
 }
 
 .materia-container ul li {
@@ -340,6 +467,10 @@ a:hover {
     margin-top: 4rem;
     width: 100%;
     box-sizing: border-box;
+}
+
+.oscuro .footer {
+    background-color: #000000;
 }
 
 .footer p {

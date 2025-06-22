@@ -1,0 +1,29 @@
+// Modifique el ejercicio anterior para mostrar un mensaje (luego del mensaje del ejercicio 1), que le diga al usuario
+cuántos días ha vivido desde que nació.
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bienvenida</title>
+</head>
+
+<body>
+    <script>
+        const nombre = prompt("Ingresá tu nombre:");
+        const apellido = prompt("Ingresá tu apellido:");
+        const fechaNacimiento = prompt("Ingresá tu fecha de nacimiento (AAAA-MM-DD):");
+
+        alert("¡Bienvenido " + nombre + " " + apellido + "!");
+
+        const nacimiento = new Date(fechaNacimiento);
+        const hoy = new Date();
+        const diferencia = hoy - nacimiento;
+        const diasVividos = Math.floor(diferencia / (1000 * 60 * 60 * 24));
+
+        alert("Has vivido aproximadamente " + diasVividos + " días.");
+    </script>
+</body>
+
+</html>

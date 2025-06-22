@@ -18,6 +18,10 @@
                 <li><a href="materias.html">Materias 2025</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
+            <div class="botones-modo">
+                <button id="modo-claro" class="boton-modo">Modo Claro</button>
+                <button id="modo-oscuro" class="boton-modo">Modo Oscuro</button>
+            </div>
         </nav>
     </header>
     <h1 class="titulo-materia">Diseño y Desarrollo Web</h1>
@@ -95,8 +99,10 @@
                 </li>
                 <li>
                     Trabajo práctico Integrador UVA 2
-                    <a href="enlace-repo" target="_blank">Repositorio</a> |
-                    <a href="enlace-github-page" target="_blank">GitHub Page</a>
+                    <a href="https://github.com/Nacho-Cervera/diseno_y_desarrollo_web/tree/main/uva_1/integrador"
+                        target="_blank">Repositorio</a> |
+                    <a href="https://nacho-cervera.github.io/diseno_y_desarrollo_web/uva_1/integrador/index.html"
+                        target="_blank">GitHub Page</a>
                 </li>
             </ul>
         </div>
@@ -104,6 +110,25 @@
     <footer class="footer">
         <p>&copy; 2025, Curso: Martes, Virtual. Profesora: Patricia Litovicius.</p>
     </footer>
+
+    <script>
+        const body = document.body;
+
+        const modoGuardado = localStorage.getItem('modo');
+        if (modoGuardado === 'oscuro') {
+            body.classList.add('oscuro');
+        }
+
+        document.getElementById('modo-claro').addEventListener('click', function () {
+            body.classList.remove('oscuro');
+            localStorage.setItem('modo', 'claro');
+        });
+
+        document.getElementById('modo-oscuro').addEventListener('click', function () {
+            body.classList.add('oscuro');
+            localStorage.setItem('modo', 'oscuro');
+        });
+    </script>
 </body>
 
 </html>
