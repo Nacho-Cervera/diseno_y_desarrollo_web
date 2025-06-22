@@ -27,9 +27,6 @@ nav {
     background-color: #003366;
     padding: 1rem;
     position: relative;
-    align-items: center;
-    justify-content: center;
-    display: flex;
 }
 
 .oscuro nav {
